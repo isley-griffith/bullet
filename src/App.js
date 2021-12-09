@@ -1,6 +1,5 @@
-import logo from "./logo.svg";
 import "./App.css";
-import { Link } from "react-router-dom";
+import { Outlet, Link } from "react-router-dom";
 
 const App = () => {
   return (
@@ -15,6 +14,7 @@ const App = () => {
         <Link to="/invoices">Invoices</Link> |{" "}
         <Link to="/expenses">Expenses</Link>
       </nav>
+      <Outlet />
     </div>
   );
 };
